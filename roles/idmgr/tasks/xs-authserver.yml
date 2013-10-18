@@ -43,7 +43,7 @@
            state=started
 
 - name: add xs-authserver to service list
-  ini_file: dest='{{ services_filelist }}'
+  ini_file: dest='{{ service_filelist }}'
             section=xs-authserver
             option='{{ item.option }}'
             value='{{ item.value }}'
